@@ -1,0 +1,6 @@
+getdocumentByid
+getdocumentByName
+
+
+
+DOM

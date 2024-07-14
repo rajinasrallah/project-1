@@ -1,0 +1,151 @@
+body {
+    background: linear-gradient(to right, #fd6e6e, #ffb3b3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures the gradient covers the entire viewport */
+    margin: 0; /* Remove default body margin */
+    font-family: Arial, sans-serif; /* Specify a fallback font */
+}
+
+.container {
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 20px;
+    background-color: peachpuff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    background-color: rgb(253, 108, 132);
+    width: 100%; /* Ensure the input container spans full width */
+    padding: 10px;
+    margin-bottom: 20px; /* Space between input and list */
+}
+
+.input {
+    flex: 1;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    padding: 12px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
+.add {
+    padding: 12px 20px;
+    background-color: #ffb3b3;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.add:hover {
+    background-color: #d37070;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+ul li {
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+
+ul li::before {
+    content: '';
+    position: absolute;
+    left: 20px; /* Adjusted to match padding */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 98, 98);
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-color: pink;
+}
+ul li span{
+    position: absolute;
+    top: 27%;
+    right: 4px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #ffa8cb; /* Light pink background */
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    width: 30%; /* Could be more or less, depending on screen size */
+    border-radius: 10px; /* Rounded corners */
+    color: #fff;
+  }
+.inputContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    background-color: rgb(248, 150, 167);
+    width: 93%; /* Ensure the input container spans full width */
+    padding: 10px;
+    margin-bottom: 20px; /* Space between input and list */
+}
+#numberInput{
+    flex: 1;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    padding: 12px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+#popupAdd{
+    padding: 12px 20px;
+    background-color: #ffb3b3;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+    

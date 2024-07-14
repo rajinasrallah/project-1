@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='Todo-indexed.css'>
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>To Do List</h1>
+        <div class="input-container">
+            <input type="text" class="input" placeholder="Add a new task">
+            <button class="add" onclick="openModal()">Add</button>
+        </div>
+        <ul class="list-container"></ul>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>Please enter a number from 1 to 3:</p>
+            <div class="inputContainer">
+                <input type="number" id="numberInput" min="1" max="3">
+                <button id="popupAdd" onclick="submitNumber()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="mytodoDB2.js"></script>
+</body>
+</html>
